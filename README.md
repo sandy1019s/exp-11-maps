@@ -102,6 +102,33 @@ To develop a complete, feature-rich Android application (**MapVista – Explore 
 
 ---
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <div style="border: 1px solid #d0d7de; border-radius: 8px; padding: 8px;">
+        <img src="Screenshot_20261030_125859.png" alt="MapVista showing Chennai map view" width="300">
+        <br>
+        <strong>Chennai map view</strong>
+        <br>
+        <sub>Shows the Chennai marker, city search and filter chips, map layer controls, and expanded city details panel.</sub>
+      </div>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <div style="border: 1px solid #d0d7de; border-radius: 8px; padding: 8px;">
+        <img src="Screenshot_20261030_130020.png" alt="MapVista showing Bengaluru map view" width="300">
+        <br>
+        <strong>Bengaluru map view</strong>
+        <br>
+        <sub>Demonstrates switching cities with the Bengaluru marker, updated map position, coordinates, and description.</sub>
+      </div>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Google Cloud Billing Notice
 > [!NOTE]
 > Google Maps SDK for Android requires an active Google Cloud Platform project with billing enabled for your API key to render vector map tiles. If billing is not activated on the Google Cloud project associated with your API key, Google Maps will display a grid watermark or dialog stating *"This page can't load Google Maps correctly"*. All application logic, markers, UI overlays, location services, and camera animations function as designed.
