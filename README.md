@@ -30,12 +30,14 @@ To develop a complete, feature-rich Android application (**MapVista – Explore 
    - `com.google.android.gms:play-services-maps:19.0.0`
    - `com.google.android.gms:play-services-location:21.3.0`
 
-2. **Secure Key Storage (`local.properties`)**:
-   - The Google Maps API key is defined in `local.properties`:
+2. **Obtaining and Configuring your Google Maps API Key**:
+   - You must obtain your own Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com/) by enabling the **Maps SDK for Android**.
+   - Create or open `local.properties` in the root directory of your project (note: `local.properties` is strictly git-ignored and **must never be committed to GitHub**).
+   - Add your API key to `local.properties` as follows:
      ```properties
-     MAPS_API_KEY=AIzaSyAcLzg4TrnZ68tREMuCG9eWFn4OHVmVPm4
+     MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
      ```
-   - In `app/build.gradle.kts`, `local.properties` is loaded and passed as a manifest placeholder:
+   - In `app/build.gradle.kts`, `local.properties` is automatically loaded and passed as a manifest placeholder:
      ```kotlin
      val mapsApiKey = localProperties.getProperty("MAPS_API_KEY") ?: ""
      manifestPlaceholders["MAPS_API_KEY"] = mapsApiKey
@@ -78,7 +80,7 @@ To develop a complete, feature-rich Android application (**MapVista – Explore 
 ## Implementation Procedure
 
 1. **Configure API Key & Dependencies**:
-   - Add `MAPS_API_KEY` to `local.properties`.
+   - Add `MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY` to `local.properties`.
    - Update `libs.versions.toml` and `app/build.gradle.kts` with Google Play Services dependencies and manifest placeholders.
 2. **Setup AndroidManifest.xml**:
    - Request location permissions and insert the Google Maps API key meta-data tag.
@@ -102,7 +104,7 @@ To develop a complete, feature-rich Android application (**MapVista – Explore 
 
 ## Google Cloud Billing Notice
 > [!NOTE]
-> Google Maps SDK for Android requires an active Google Cloud Platform project with billing enabled for the API key to render vector map tiles. If billing is not activated on the Google Cloud project associated with key `AIzaSyAcLzg4TrnZ68tREMuCG9eWFn4OHVmVPm4`, Google Maps will display a grid watermark or dialog stating *"This page can't load Google Maps correctly"*. All application logic, markers, UI overlays, location services, and camera animations function as designed.
+> Google Maps SDK for Android requires an active Google Cloud Platform project with billing enabled for your API key to render vector map tiles. If billing is not activated on the Google Cloud project associated with your API key, Google Maps will display a grid watermark or dialog stating *"This page can't load Google Maps correctly"*. All application logic, markers, UI overlays, location services, and camera animations function as designed.
 
 ---
 
