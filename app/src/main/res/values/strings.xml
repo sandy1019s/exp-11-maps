@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MapVista</string>
+    <string name="app_subtitle">Explore Maps &amp; Cities</string>
+    <string name="search_hint">Search predefined city&#8230;</string>
+    <string name="map_type_normal">Default</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_hybrid">Hybrid</string>
+
+    <string name="city_chennai">Chennai</string>
+    <string name="city_bengaluru">Bengaluru</string>
+    <string name="city_mumbai">Mumbai</string>
+    <string name="city_delhi">Delhi</string>
+    <string name="city_hyderabad">Hyderabad</string>
+
+    <string name="desc_chennai">Chennai – Capital of Tamil Nadu. Renowned for Marina Beach, Kapaleeshwarar Temple, and rich South Indian art &amp; culture.</string>
+    <string name="desc_bengaluru">Bengaluru – Silicon Valley of India. Famous for IT hubs, Lalbagh Botanical Garden, Cubbon Park, and pleasant climate.</string>
+    <string name="desc_mumbai">Mumbai – Financial capital of India. Home to the iconic Gateway of India, Marine Drive, and Bollywood film industry.</string>
+    <string name="desc_delhi">Delhi – Capital territory of India. Historic metropolis with India Gate, Red Fort, Qutub Minar, and bustling bazaars.</string>
+    <string name="desc_hyderabad">Hyderabad – City of Pearls. World-famous for Charminar, Golconda Fort, Ramoji Film City, and royal Biryani cuisine.</string>
+
+    <string name="state_chennai">Tamil Nadu, India</string>
+    <string name="state_bengaluru">Karnataka, India</string>
+    <string name="state_mumbai">Maharashtra, India</string>
+    <string name="state_delhi">National Capital Territory, India</string>
+    <string name="state_hyderabad">Telangana, India</string>
+
+    <string name="btn_center_map">Zoom In</string>
+    <string name="btn_directions">Explore City</string>
+    <string name="location_permission_needed">Location permission is required to display your current position on MapVista.</string>
+    <string name="location_disabled">Location service is turned off. Please turn on GPS in system settings.</string>
+    <string name="select_city_prompt">Tap a marker or search a city above to view details.</string>
+</resources>
